@@ -1,0 +1,140 @@
+\documentclass{article}
+\usepackage{amsfonts}
+
+\title{Mathematical analysis. Lesson 2. Homework}
+\author{Plyuhin Aleksandr}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction to Mathematical analysis}
+
+\subsection{Execrise 1}
+
+Elements of sequence are elements of some set.
+Sequence is function of natural numbers.
+
+\subsection{Execrise 2}
+
+\begin{enumerate}
+    \item %1
+        $
+        \forall y \in [0;1] : sgn(y)=1
+        $
+        
+        For every $y$, if $y$ in [0;1], then $sgn(y)=1$.
+        
+        % Неверно. При нуле будет ноль.
+        This statement is false, because if $y=0$, then $sgn(y)=0$.
+        
+        Negative: $
+            \exists y \in [0;1] : sgn(y) \neq 1
+        $
+        
+        \ 
+        
+        
+    \item %2
+        $
+        \forall n \in \mathbb{N} > 2 : \exists x,y,z \in \mathbb{N} : x^n = y^n + z^n
+        $
+        
+        For every natural number $n$, 
+        there exist natural numbers x,y,z such that $x^n = y^n + z^n$.
+        
+        % Неверно. Это теорема Ферма.
+        This statement is false. It's Fermat's Last Theorem.
+        
+        Negative: $
+            \forall n \in \mathbb{N} > 2 : \not\exists x,y,z \in \mathbb{N} : x^n = y^n + z^n
+        $
+        
+        \ 
+        
+    \item %3
+        $
+        \forall x \in \mathbb{R} \  \exists X \in \mathbb{R} : X>x
+        $
+        
+        For every real number $x$, there exists real number $X$ such that $X>x$.
+        
+        % Верно, например X=x+1
+        This statement is true. An $X$ may always be equals to $x+1$.
+        
+        Negative: $
+            \forall x \in \mathbb{R} \  \not\exists X \in \mathbb{R} : X>x
+        $
+        
+        \ 
+        
+    \item %4
+        $
+        \forall x \in \mathbb{C} \  \not\exists y \in \mathbb{C} : x>y || x<y
+        $
+        
+        For every complex number $x$, there does not exist complex number $y$ such that
+        $x>y || x<y$.
+        
+        % Верно. Комплексные числа нельзя сравнивать на больше/меньше;
+        This statement is true. We can't compare two complex numbers.
+        
+        Negative: $
+            \forall x \in \mathbb{C} \  \exists y \in \mathbb{C} : x>y || x<y
+        $
+        
+        \ 
+        
+    \item %5
+        $
+        \forall y \in [0; \frac{\pi}{2} ] \  \exists \varepsilon >0 : \sin{y} < \sin{(y + \varepsilon)}
+        $
+        
+        For every $y$ in $[0; \frac{\pi}{2} ]$, there exist $\varepsilon >0$ such that
+        $\sin{y} < \sin{(y + \varepsilon)}$.
+        
+        % Неверно, т.к. в точке y=pi/2 синус принимает свое максимальное значение =1.
+        This statement is false, because maximum value of sine is when $y = \frac{\pi}{2} $.
+        
+        Negative: $
+            \exists y \in [0; \frac{\pi}{2} ] \  \not\exists \varepsilon >0 : \sin{y} < \sin{(y + \varepsilon)}
+        $
+        
+        \ 
+        
+    \item %6
+        $
+        \forall y \in [0; \pi ) \  \exists \varepsilon >0 : \cos{y} > \cos{(y + \varepsilon)}
+        $
+        
+        For every $y$ in $[0; \pi )$, there exist $\varepsilon >0$ such that
+        $\cos{y} > \cos{(y + \varepsilon)}$.
+        
+        % Верно, например e=pi-y, тогда cos(y+e)=-1, а при любом y из интервала [0; pi) выполняется cos(y)>-1
+        This statement is true.
+        If $y$ in $[0; pi)$, then $\cos{y}$ is greater than $-1$.
+        If $\varepsilon = \pi - y$, then $\cos{(y + \varepsilon)}=-1$.
+        
+        Negative: $
+            \forall y \in [0; \pi ) \  \not\exists \varepsilon >0 : \cos{y} > \cos{(y + \varepsilon)}
+        $
+        
+        \ 
+        
+    \item 
+        $
+        \exists x : x \not\in \{ \mathbb{N,Z,Q,R,C} \}
+        $
+        
+        There exist $x$ that does not belong to any set of $\mathbb{N,Z,Q,R,C}$.
+        
+        % Верно, если мы рассматриваем множества, состоящие, например, из букв.
+        This statement may be true, if we consider sets, that contains not numbers.
+        
+        Negative: $
+            \forall x : x \in \{ \mathbb{N,Z,Q,R,C} \}
+        $
+        
+\end{enumerate}
+
+\end{document}
