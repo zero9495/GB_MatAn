@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+
+\title{Mathematical analysis. Lesson 5. Homework}
+\author{Plyuhin Aleksandr}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{} 
+    \[
+    \lim_{x \to \infty} \left( \frac{x+3}{x} \right) ^{4x+1} = 
+    \lim_{x \to \infty} \left( 1 + \frac{3}{x} \right) ^{4x+1} = 
+    \lim_{x \to \infty} \left( 1 + \frac{3}{x} \right) ^ { \frac{x}{3} \cdot \frac{3}{x} \cdot (4x+1) } = 
+    
+    = e^{ \lim_{x \to \infty} \frac{3(4x+1)}{x} } = e^12
+    \]
+    
+    
+    \[
+    \lim_{x \to \infty} \frac{3(4x+1)}{x} = 
+    \lim_{x \to \infty} \frac{12x+3}{x} = 
+    \lim_{x \to \infty} (12 + \frac{3}{x} ) = 12
+    \]
+
+\section{}
+    \[
+    \lim_{x \to \infty} \left( \frac{4x+3}{4x-3} \right) ^{6x} = 
+    \lim_{x \to \infty} \left( \frac{4x-3+6}{4x-3} \right) ^{6x} = 
+    \lim_{x \to \infty} \left( 1 + \frac{6}{4x-3} \right) ^{6x} = 
+    \]
+    
+    \[
+    \lim_{x \to \infty} \left( 1 + \frac{6}{4x-3} \right) 
+    ^{ \frac{4x-3}{6} \cdot \frac{6}{4x-3} \cdot 6x} = 
+    = e^{ \lim_{x \to \infty} \frac{36x}{4x-3} } = e^9
+    \]
+    
+    \[
+    \lim_{x \to \infty} \frac{36x}{4x-3} = 
+    \lim_{x \to \infty} \frac{36}{4- \frac{3}{x}} = 
+    \frac{36}{4} = 9
+    \]
+
+\section{}
+    \[
+    \lim_{x \to \infty} \left( \frac{ \sin{x} + \ln{x} }{x} \right) = 
+    \lim_{x \to \infty} \left( \frac{\sin{x}}{x}  +  \frac{\ln{x}}{x} \right) = 
+    \lim_{x \to \infty} \left( \frac{\ln{x}}{x} \right) = 0
+    \]
+
+\section{}
+    \[
+    \lim_{x \to 0} \left( \frac{ \sin{x} + \ln{x} }{x} \right) = 
+    \lim_{x \to 0} \left( \frac{\sin{x}}{x}  +  \frac{\ln{x}}{x} \right) = 
+    \lim_{x \to 0} \left( 1 + \frac{\ln{x}}{x} \right) = 
+    \]
+    
+    \[
+    1 + \lim_{x \to 0} \left( \frac{\ln{x}}{x} \right) = 
+    1 -\infty = -\infty
+    \]
+    
+\end{document}
