@@ -1,0 +1,96 @@
+\documentclass{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+
+\title{Mathematical analysis. Lesson 7. Homework}
+\author{Plyuhin Aleksandr}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{} 
+    $
+    \begin{cases}
+      2x+2y=144 \\
+      s=xy
+    \end{cases}
+    \begin{cases}
+      x+y=72 \\
+      s=xy
+    \end{cases}
+    \begin{cases}
+      y=72-x \\
+      s=x(27-x)
+    \end{cases}
+    $
+    
+    $
+    s' = x'(27-x)+x(72-x)' = 72-x-x = 72-2x
+    
+    s'=72-2x=0
+    
+    2x=72
+    
+    x=36
+    
+    y=72-x=36
+    
+    s = 36^2 = 1296
+    $
+
+\section{} 
+    \subsection{}
+        $ y=|2x| $
+        
+        $ y' = (|2x|)' = \frac{2x}{|2x|} \cdot 2 = \frac{4x}{|2x|} = 0 => x=0 $
+        
+        $ y'(-1) = \frac{-4}{|-2|} = - \frac{4}{2} = -2 $
+        
+        $ y'(1) = \frac{4}{|2|} = \frac{4}{2} = 2 $
+        
+        x=0 - is local minimum.
+    
+    \subsection{}
+        $ y=x^3 $
+        
+        $ y' = 3x^2=0 => x=0 $
+        
+        $ y'(-1) = 3 $
+        
+        $ y'(1) = 3 $
+        
+        x=0 - is not extremum.
+    
+    \subsection{}
+        $ y=e^{3x} $
+        
+        $ y' = 3e^{3x} $
+        
+        This function doesn't have any extremum.
+    
+    \subsection{}
+        $ y=x^3-5x $
+        
+        $ y'=3x^2-5=0 $
+        
+        $ D = b^2-4ac = 60 $
+        
+        $ x1 = \frac{\sqrt{60}}{6} = \frac{\sqrt{15}}{3} \approx 1.19$
+        
+        $ x2 = - \frac{\sqrt{60}}{6} = - \frac{\sqrt{15}}{3} $
+        
+        $ y'(-2) = 12-5 = 7 > 0 $
+        
+        $ y'(-1) = 3-5 = -2 < 0 $
+        
+        $ y'(1) = 3-5 = -2 < 0 $
+        
+        $ y'(2) = 12-5 = 7 > 0 $
+        
+        x1 is local minimum.
+        
+        x2 is local maximum.
+
+\end{document}
