@@ -1,0 +1,127 @@
+\documentclass{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+
+\title{Mathematical analysis. Lesson 8. Homework}
+\author{Plyuhin Aleksandr}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{} 
+    $ z = \sqrt{1-x^3} + \ln{(y^2-1)} $
+    
+    $
+    \begin{cases}
+      1-x^3 \geq 0 \\
+      y^2-1>0
+    \end{cases}
+    \begin{cases}
+      1 \geq x^3 \\
+      y^2>1
+    \end{cases}
+    \begin{cases}
+      x \leq 1 \\
+      y>1
+    \end{cases}
+    $
+
+\section{}
+    $ z = \left( 1 + \frac{\ln{x}}{\ln{y}} \right)^3 $
+    
+    
+    $ z'_x = \left( \left( 1 + \frac{\ln{x}}{\ln{y}} \right)^3 \right)'_x = $
+    $ 3 \left( 1 + \frac{\ln{x}}{\ln{y}} \right)^2   \left( 1 + \frac{\ln{x}}{\ln{y}} \right)'_x  = $
+    
+    $ = 3 \left( 1 + \frac{\ln{x}}{\ln{y}} \right)^2 \frac{1}{\ln{y}} \frac{1}{x} = $
+    $ \frac{3}{x\ln{y}}  \left( 1 + \frac{\ln{x}}{\ln{y}} \right)^2 $
+    
+    
+    $ z'_y = \left( \left( 1 + \frac{\ln{x}}{\ln{y}} \right)^3 \right)'_y = $
+    $ 3 \left( 1 + \frac{\ln{x}}{\ln{y}} \right)^2   \left( 1 + \frac{\ln{x}}{\ln{y}} \right)'_y  = $
+    
+    $ = 3 \left( 1 + \frac{\ln{x}}{\ln{y}} \right)^2   \ln{x} \cdot \left( (\ln{y})^{-1} \right)'_y = $
+    
+    $ = 3 \left( 1 + \frac{\ln{x}}{\ln{y}} \right)^2   \ln{x} \cdot (-1)(\ln{y})^{-2} \cdot \frac{1}{y} = $
+    
+    $ = -\frac{3\ln{x}}{y(\ln{y})^2}   \left( 1 + \frac{\ln{x}}{\ln{y}} \right)^2 $
+
+\section{}
+    $ z = \sqrt{2xy + \cos{\frac{x}{y}}} $
+    
+    
+    $ z'_x = \left(  (2xy + \cos{\frac{x}{y}}) ^ {\frac{1}{2}} \right)'_x = $
+    $ \frac{1}{2} (2xy + \cos{\frac{x}{y}}) ^ {-\frac{1}{2}}  (2xy + \cos{\frac{x}{y}})'_x= $
+    
+    $ = \frac{1}{2} (2xy + \cos{\frac{x}{y}}) ^ {-\frac{1}{2}}  (2y - \sin{\frac{x}{y}} \cdot \frac{1}{y}) $
+    
+    
+    $ z'_y = \left(  (2xy + \cos{\frac{x}{y}}) ^ {\frac{1}{2}} \right)'_y = $
+    $ \frac{1}{2} (2xy + \cos{\frac{x}{y}}) ^ {-\frac{1}{2}}  (2xy + \cos{\frac{x}{y}})'_y= $
+    
+    $ = \frac{1}{2} (2xy + \cos{\frac{x}{y}}) ^ {-\frac{1}{2}}  (2x - \sin{\frac{x}{y}} \cdot x(-1)y^{-2}) $
+    
+    
+    $ dz = z'_x dx + z'_y dy = $
+    
+    $ = \frac{ 2y -\frac{1}{y} \sin{\frac{x}{y}} }{ 2\sqrt{2xy+\cos{\frac{x}{y}}} } dx + $
+    $ \frac{ 2x +\frac{x}{y^2} \sin{\frac{x}{y}} }{ 2\sqrt{2xy+\cos{\frac{x}{y}}} } dy $
+    
+    $ dz(1;1) = $
+    $ \frac{ 2 -\sin{1} }{ 2\sqrt{2+\cos{1}} } dx + $
+    $ \frac{ 2 +\sin{1} }{ 2\sqrt{2+\cos{1}} } dy $
+
+\section{}
+    $ z = x^2 + xy + y^2 -6x -9y $
+    
+    $ z'_x = 2x+y-6 $
+    
+    $ z'_y = x+2y-9 $
+    
+    $ z''_{xx} = 2 $
+    
+    $ z''_{yy} = 2 $
+    
+    $ z''_{xy} = 1 $
+    
+    $ z''_{yx} = 1 $
+
+    $
+    \begin{cases}
+      2x+y-6=0 \\
+      x+2y-9=0
+    \end{cases}
+    \begin{cases}
+      y=6-2x \\
+      x+2(6-2x)-9=0
+    \end{cases}
+    $
+
+    $
+    \begin{cases}
+      y=6-2x \\
+      -3x+3=0
+    \end{cases}
+    \begin{cases}
+      y=6-2=4 \\
+      x=1
+    \end{cases}
+    $
+    
+    M(1;4)
+    
+    $ \Delta = 
+    \begin{vmatrix}
+    z''_{xx} & z''_{xy} \\
+    z''_{xy} & z''_{yy} 
+    \end{vmatrix}
+    = z''_{xx} z''_{yy} - (z''_{xy})^2 = 2 \cdot 2 -1 = 3 >0
+    $
+    
+    $ z''_{xx} > 0 $
+    
+    M(1;4) is local minimum
+
+\end{document}
