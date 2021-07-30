@@ -1,0 +1,114 @@
+\documentclass{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+
+\title{Mathematical analysis. Lesson 9. Homework}
+\author{Plyuhin Aleksandr}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{} 
+    $ U = 3-8x+6y $, for $x^2+y^2=36$
+    
+    $ L = f(x,y) + \lambda \varphi(x,y) =  3-8x+6y + \lambda(x^2+y^2=36)$
+    
+    $ L'_x = -8 + \lambda 2x $
+    
+    $ L'_y = 6 + \lambda 2y $
+    
+    $
+    \begin{cases}
+      L'_x=0 \\
+      L'_y=0 \\
+      \varphi(x,y) = 0
+    \end{cases}
+    \begin{cases}
+      -8 + \lambda 2x =0 \\
+      6 + \lambda 2y =0 \\
+      x^2+y^2=36
+    \end{cases}
+    \begin{cases}
+      x = \frac{8}{2\lambda} \\
+      y = -\frac{6}{2\lambda} \\
+      (\frac{8}{2\lambda})^2 + (-\frac{6}{2\lambda})^2 = 36
+    \end{cases}
+    $
+    
+    $ 64+36=36\cdot4\lambda^2 $
+    
+    $ \lambda^2 = \frac{100}{144} $
+    
+    $ \lambda_1 = \frac{10}{12}$ ; $ x=\frac{24}{5} $ ; $ y=-\frac{18}{5} $
+    
+    $ \lambda_2 = -\frac{10}{12}$ ; $ x=-\frac{24}{5} $ ; $ y=\frac{18}{5} $
+    
+    $ M_1(\frac{24}{5}; -\frac{18}{5})$ ; $ M_2(-\frac{24}{5}; \frac{18}{5})$
+    
+    $ U(M_1) = 3 - \frac{8\cdot24}{5} - \frac{6\cdot18}{5} = $
+    $ \frac{15-192-108}{5} = -\frac{285}{5} = -57 $ - is conditional minimum
+    
+    $ U(M_2) = 3 + \frac{8\cdot24}{5} + \frac{6\cdot18}{5} = $
+    $ \frac{15+192+108}{5} = \frac{315}{5} = 63 $ - is conditional maximum
+
+\section{}
+    $ U = 2x^2+12xy+32y^2+15 $, for  $ x^2+16y^2=64 $
+    
+    $ U(-4\sqrt{2}; -\sqrt{2}) = U(4\sqrt{2}; \sqrt{2}) =239 $ - is conditional maximum
+    
+    $ U(-4\sqrt{2}; \sqrt{2}) = U(4\sqrt{2}; -\sqrt{2}) =47 $ - is conditional minimum
+
+\section{}
+    $ U=x^2+y^2+z^2$,  $ \Vec{c}(-9;8;-12) $,  $ M(8;-12;9) $
+    
+    $ U'_x = (x^2+y^2+z^2)'_x=2x $
+    
+    $ U'_y=2y $
+    
+    $ U'_z=2z $
+    
+    $ U'_x(M)=2\cdot8=16 $
+    
+    $ U'_y(M)=-24 $
+    
+    $ U'_z(M)=-18 $
+    
+    $ \Vec{c}_0 = \frac{\Vec{c}}{|\Vec{c}|} = $
+    $ \frac{-9i+8j-12k} {\sqrt{(-9)^2 + 8^2 + (-12)^2}} = $
+    $ \frac{-9i+8j-12k} {\sqrt{81 + 64 + 144}} = $
+    $ -\frac{9}{17}i +\frac{8}{17}j -\frac{12}{17}k$
+    
+    $ \frac{\partial U}{\partial l_c} = U'_x(M_0)\cos{\alpha} + U'_y(M_0)\cos{\beta} + U'_z(M_0)\cos{\gamma} =$
+    
+    $ = 16(-\frac{9}{17})-24(\frac{8}{17})+9(-\frac{12}{17}) = $
+    
+    $ \frac{-144-192-108}{17} = -\frac{144}{17} $
+
+\section{}
+    $ U = e^{x^2+y^2+z^2} $,  $ \vec{d}(4;-13;-16) $,  $ L(-16;4;-13) $
+    
+    $ U'_x = 2x e^{x^2+y^2+z^2} $
+    
+    $ U'_y = 2y e^{x^2+y^2+z^2} $
+    
+    $ U'_z = 2z e^{x^2+y^2+z^2} $
+    
+    $ U'_x(L) = 2(-16) e^{x^2+y^2+z^2} = -32e^{441}$
+    
+    $ U'_y(L) = 8e^{441}$
+    
+    $ U'_z(L) = -13e^{441}$
+    
+    $ \vec{d} = \frac{\vec{d}}{|\vec{d}|} = $
+    $ \frac{4i-13j-16k} {\sqrt{16+169+256}} = \frac{4}{21}i -\frac{13}{21}j -\frac{16}{21}k $
+    
+    $ \frac{\partial U}{\partial l_d} = $
+    $ -32e^{441}\cdot\frac{4}{21} - 8e^{441}\cdot\frac{13}{21} + 13e^{441}\cdot\frac{16}{21} =$
+    
+    $ = \frac{e^{441}}{21} (-31\cdot4-8\cdot13+13\cdot16) =$
+    
+    $ = \frac{e^{441}}{21} (-128-104+208) =  -\frac{24}{21} e^{441} $
+
+\end{document}
