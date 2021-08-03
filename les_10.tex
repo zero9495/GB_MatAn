@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+
+\title{Mathematical analysis. Lesson 10. Homework}
+\author{Plyuhin Aleksandr}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{} 
+    $ \int (2x^2-2x-1+\sin{x}-\cos{x}+\ln{x}+e^x)dx = $
+    
+    $ = 2\int x^2dx -2\int xdx -\int dx +\int \sin{x}dx -\int \cos{x}dx +\int \ln{x}dx +\int e^xdx = $
+    
+    $ = 2\frac{x^3}{3} -2\frac{x^2}{2} -x -\cos{x} -\sin{x} +x\ln{x} -x + e^x +C $
+
+\section{}
+    $ \int (2x+6xz^2-5x^2y-3\ln{z})dx = $
+    
+    $ = 2\int xdx +6z^2\int xdx -5y\int x^2dx -3\ln{z}\int dx = $
+    
+    $ = 2\frac{x^2}{2} + 6z^2\frac{x^2}{2} -5y\frac{x^3}{3} -3x\ln{z} + C $
+
+\section{}
+    $ \int_0^{\pi} 3x^2\sin{(2x)} dx $
+    
+    $ 3\int x^2\sin{(2x)} dx = 3\int udv = * $
+    
+    $ u=x^2 $ ,  $ du=2xdx $
+    
+    $ dv=\sin{(2x)}dx $ ,  $ v = \int \sin{(2x)}dx = \frac{1}{2}\int \sin{(2x)}d(2x) = -\frac{1}{2}\cos{(2x)} $
+    
+    $ * = 3(uv - \int vdu) = 3(x^2(-\frac{1}{2}\cos{(2x)} -\int (-\frac{1}{2}\cos{(2x)}2xdx))) = $
+    
+    $ = 3(-\frac{1}{2}x^2\cos{(2x)} + \int x\cos{(2x)}dx) = ** $
+    
+    $ \int x\cos{(2x)}dx = \int udv = * $
+    
+    $ u=x $ ,  $du=dx$
+    
+    $ dv = \cos{(2x)}dx $ ,  $ v = \int \cos{(2x)}dx = \frac{1}{2} \int \cos{(2x)}d(2x) = \frac{1}{2}\sin{(2x)} $
+    
+    $ * = uv-\int vdu = \frac{1}{2}x\sin{(2x)} -\frac{1}{2}\int \sin{(2x)}dx = $
+    
+    $ = \frac{1}{2}x\sin{(2x)} - \frac{1}{2} (-\frac{1}{2}\cos{(2x)}) $
+    $ = \frac{1}{2}x\sin{(2x)} +\frac{1}{4}\cos{(2x)} $
+    
+    $ ** = 3(-\frac{1}{2}x^2\cos{(2x)} + \frac{1}{2}x\sin{(2x)} +\frac{1}{4}\cos{(2x)} ) +C = $
+    
+    $ = -\frac{3}{2}x^2\cos{(2x)} + \frac{3}{2}x\sin{(2x)} +\frac{3}{4}\cos{(2x)} +C $
+    
+    
+    $ \int_0^{\pi} 3x^2\sin{(2x)} dx = $
+    
+    $ = (-\frac{3}{2}x^2\cos{(2x)} + \frac{3}{2}x\sin{(2x)} +\frac{3}{4}\cos{(2x)} )|_0^{\pi} $
+    $ = F(\pi)-F(0) = $
+    
+    $ = -\frac{3}{2}\pi^2\cos{(2\pi)} + \frac{3}{2}\pi\sin{(2\pi)} +\frac{3}{4}\cos{(2\pi)} 
+    - (\frac{3}{4}\cos{0}) = $
+    
+    $ -\frac{3}{2}\pi^2 \cdot 1 + \frac{3}{2}\pi \cdot 0 + \frac{3}{4} \cdot 1 - \frac{3}{4} \cdot 1 $
+    $ = -\frac{3}{2}\pi^2 $
+
+\section{}
+    \int \frac{dx}{\sqrt{x+1}} = *
+    
+    $ t=x+1 $ ,  $dt=dx$ , $x=t-1$
+    
+    $ * = \int \frac{dt}{\sqrt{t-1+1}} = \int t^{-\frac{1}{2}} dt = \frac{ t^{\frac{1}{2}} }{\frac{1}{2}} $
+    $ = 2\sqrt{t} +C = 2\sqrt{x+1} +C $
+
+\end{document}
